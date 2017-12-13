@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(fonts/Montserrat-Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url(fonts/Montserrat-ExtraBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url(fonts/Montserrat-Light.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url(fonts/Montserrat-Medium.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(fonts/Montserrat-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url(fonts/Montserrat-SemiBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'MontserratAlternates-Light';
+  src: url(fonts/MontserratAlternates-Light.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}@font-face {
+  font-family: 'MontserratAlternates-Regular';
+  src: url(fonts/MontserratAlternates-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}@font-face {
+  font-family: 'MontserratAlternates-SemiBold';
+  src: url(fonts/MontserratAlternates-SemiBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url(fonts/Poppins-Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url(fonts/Poppins-Light.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}@font-face {
+  font-family: 'Poppins-Medium';
+  src: url(fonts/Poppins-Medium.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}@font-face {
+  font-family: 'Poppins-Regular';
+  src: url(fonts/Poppins-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url(fonts/Poppins-SemiBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}@font-face {
+  font-family: 'RubikMonoOne-Regular';
+  src: url(fonts/RubikMonoOne-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

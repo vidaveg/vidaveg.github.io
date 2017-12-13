@@ -1,0 +1,150 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  margin:0;
+  padding:0;
+  background-color: #000000;
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+	color: #FFFFFF;
+	text-align: right;
+	font-size:2.5vw;
+  text-shadow:0vw 0vw 1.5vw #000000;
+  opacity:0.4;
+  cursor: pointer;
+  border-top: 0.2vw white solid;
+
+}
+
+#fuentes{
+  padding: 0;
+  margin-bottom: 0.25vw;
+	color: #FFFFFF;
+	text-align: right;
+	font-size:1vw;
+  text-shadow:0vw 0vw 1.25vw #000000;
+  opacity:0.4;
+  cursor: pointer;
+
+}
+
+.over {
+opacity:1;
+}
+
+#pagFuentes{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 5%;
+  right: 5%;
+}
+
+#logo{
+  position: absolute;
+  width: 5%;
+  padding: 0;
+  margin: 0;
+  bottom: 5%;
+  left: 5%;
+  opacity:0.4;
+  cursor: pointer;
+}
+
+#gases1,#gases2,#gases3,#gases4{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+
+#oceanos1,#oceanos2,#oceanos3,#oceanos4,#oceanos5{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+
+#deforestacion1,#deforestacion2,#deforestacion3,#deforestacion4{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+
+#recursos1,#recursos2,#recursos3,#recursos4{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+
+#extincion1,#extincion2,#extincion3{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+
+#puertasalud {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  left:56%;
+  visibility: hidden;
+}
+#puertaetica {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  left:33%;
+  visibility: hidden;
+}
+
+#escogeOtraPuerta {
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}

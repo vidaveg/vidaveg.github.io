@@ -1,0 +1,114 @@
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  overflow: hidden;
+}
+/* Estilos frase inicio */
+#inicio1frase{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+
+}
+/* ESTILOS PUERTAS */
+
+#puertasalud {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  left:45%;
+  visibility: hidden;
+}
+
+#puertamedio {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  left:25%;
+  visibility: hidden;
+}
+
+#puertaetica {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  left:65%;
+  visibility: hidden;
+}
+#escogeUnaPuerta {
+    position: absolute;
+    width:100%;
+    height:auto;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    margin: auto;
+    visibility: hidden;
+  }
+
+#backsalud {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  left:45%;
+  opacity: 0;
+}
+
+#backmedio {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  left:25%;
+  opacity: 0;
+}
+
+#backetica{
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  left:65%;
+  opacity: 0;
+}
+
+/* Estilos frase salud 1 */
+#fs1frase{
+
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  visibility: hidden;
+}

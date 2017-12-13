@@ -1,0 +1,155 @@
+@charset "utf-8";
+body {
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0;
+}
+:target:before {
+	content:"";
+	display:block;
+	height:80px; /* fixed header height*/
+	margin:-80px 0 0; /* negative fixed header height */
+}
+
+nav{
+	top:0px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	height: 180px;
+	transition: transform 0.2s ease;
+	background-color: #FFFFFF;
+	display: grid;
+	grid-template-columns:1fr 25% 25% 25% 1fr;
+	grid-template-areas:
+	"bi nizq ncent nder bd";
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #FFFFFF;
+
+}
+h1{
+	height: 148px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: -20px;
+	color: #000000;
+	text-align: center;
+	font-size:3em;
+}
+h2{
+	z-index: 1;
+	font-weight: 400;
+	font-size: 200%;
+	margin-top: 120px;
+	text-align: center;
+	color: #000000;
+}
+.slide-up{
+	transform: translateY(-100px)
+}
+#tAmbiente{
+	grid-area: nizq;
+}
+#tSalud{
+	grid-area: ncent;
+}
+#tEtica{
+	grid-area: nder;
+}
+#logo{
+	position: fixed;
+	width: 5%;
+	padding: 0;
+	margin: 0;
+	bottom: 5%;
+	left: 3%;
+	opacity:0.4;
+	cursor: pointer;
+}
+h1, h2, h3,h5{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+h5{
+	font-weight: 400;
+	text-align: center;
+	font-size: 2em;
+}
+h3{
+	margin-top: 100px;
+	font-size: 1.8em;
+}
+h4{
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+a{
+	display:block;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+.Contenido{
+	margin-top: 200px;
+	margin-bottom: 100px;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+}
+
+.backAmbiente{
+	color:#FFFFFF;
+	width:auto;
+	background-color: #B3F20A;
+	border-radius: 8px;
+	height:40px;
+}
+.backSalud{
+	color:#FFFFFF;
+	width:auto;
+	border-radius: 8px;
+	background-color: #8C80EF;
+	height:40px;
+}
+.backEtica{
+	color:#FFFFFF;
+	width:auto;
+	border-radius: 8px;
+	background-color: #45AFFF;
+	height:40px;
+}
+#tAmbiente:hover{
+	color:#000000;
+	width:auto;
+	background-color: #B3F20A;
+	border-radius: 8px;
+	height:40px;
+}
+#tSalud:hover{
+	color:#000000;
+	width:auto;
+	border-radius: 8px;
+	background-color: #8C80EF;
+	height:40px;
+}
+#tEtica:hover{
+	color:#000000;
+	width:auto;
+	border-radius: 8px;
+	background-color: #45AFFF;
+	height:40px;
+}
+.mambiente{
+	color:#A9D816;
+}
+.ssalud{
+	color:#8C80EF;
+}
+.eetica{
+	color:#45AFFF;
+}

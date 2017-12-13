@@ -1,0 +1,191 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  margin:0;
+  padding:0;
+  background-color: #000000;
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF;
+  text-align: right;
+  font-size:2.5vw;
+  text-shadow:0vw 0vw 1.5vw #000000;
+  opacity:0.4;
+  cursor: pointer;
+  border-top: 0.2vw white solid;
+}
+#fuentes{
+  padding: 0;
+  margin-bottom: 0.25vw;
+  color: #FFFFFF;
+  text-align: right;
+  font-size:1vw;
+  text-shadow:0vw 0vw 1.25vw #000000;
+  opacity:0.4;
+  cursor: pointer;
+}
+
+.over {
+  opacity:1;
+}
+#pagFuentes{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 5%;
+  right: 5%;
+}
+#logo{
+  position: absolute;
+  width: 5%;
+  padding: 0;
+  margin: 0;
+  bottom: 5%;
+  left: 5%;
+  opacity:0.4;
+  cursor: pointer;
+}
+/*SALUD*/
+#corazon1{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+#laUnicaFuente{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:50%;
+  color:white;
+  margin-top: -3%;
+  text-align: center;
+  font-size: 3vw;
+  visibility: hidden;
+}
+#textCorazon1, #textCorazon2{
+  visibility: hidden;
+  opacity:0;
+}
+#productosAnimales{
+  position: absolute;
+  width:70%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+#arteriaLarga, #arteriaLargaMotion{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:-3.5%;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+#productosAnimales{
+  position: absolute;
+  width:70%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+}
+#corazon2_texto,#corazon2_cerebro,#corazon3_estadisticas{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+#cancer1,#cancer2,#cancer3,#cancer4{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+#diabetes1_1,#diabetes1_2,#diabetesPancreas,#diabetes2_1,#diabetes2_2,#diabetes3,#diabetes4{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+#textDiabetes1{
+  visibility: hidden;
+}
+#otros1,#otros2{
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+#puertaetica {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  left:56%;
+  visibility: hidden;
+}
+#puertamedio {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  left:33%;
+  visibility: hidden;
+}
+#escogeOtraPuerta {
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+/*AMBIENTE*/
+/*ÉTICA*/
