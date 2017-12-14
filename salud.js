@@ -16,7 +16,7 @@ $(document).ready(function() {
   var Otros2playing = false;
   var Puertasplaying = false;
 
-  Corazon1();
+  Diabetes4();
   Titulo();
   // Diabetes1();
 
