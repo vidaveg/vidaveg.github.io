@@ -55,7 +55,16 @@ $(document).ready(function() {
     window.open("index.html", "_blank");
 
   }
+  //mouse
+  new TimelineMax({repeat:-1}).from($('#manoCirc'), 2,{scale:0, transformOrigin: "center center"})
+    .to($('#manoCirc'), 0.5,{opacity:0},'1.3');
+  function ManoClick(){
+    manoClick.style.visibility = "visible";
+    TweenMax.set($('#manoClick'), {scale:0});
+    TweenMax.to($('#manoClick'), 0.6,{scale:1, transformOrigin: "bottom center", ease: Back.easeOut, delay:3});
 
+  }
+//animaciones
   // Crueldad1();
   function Crueldad1(){
     crueldad1.style.visibility = "visible";
@@ -626,8 +635,10 @@ $(document).ready(function() {
         Crueldad2playing = true;
         Crueldad2();
         crueldad1.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playCrueldad3(){
     console.log('completado');
@@ -636,8 +647,10 @@ $(document).ready(function() {
         Crueldad3playing = true;
         Crueldad3();
         crueldad2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playCrueldad4(){
     console.log('completado');
@@ -646,8 +659,10 @@ $(document).ready(function() {
         Crueldad4playing = true;
         Crueldad4();
         crueldad3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playCrueldad5(){
     console.log('completado');
@@ -656,8 +671,10 @@ $(document).ready(function() {
         Crueldad5playing = true;
         Crueldad5();
         crueldad4.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playCrueldad6(){
     console.log('completado');
@@ -666,8 +683,10 @@ $(document).ready(function() {
         Crueldad6playing = true;
         Crueldad6();
         crueldad5.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playCrueldad7(){
     console.log('completado');
@@ -676,8 +695,10 @@ $(document).ready(function() {
         Crueldad7playing = true;
         Crueldad7();
         crueldad6.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playInjusticia1(){
     console.log('completado');
@@ -686,8 +707,10 @@ $(document).ready(function() {
         Injusticia1playing = true;
         Injusticia1();
         crueldad7.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playInjusticia2(){
     console.log('completado');
@@ -696,8 +719,10 @@ $(document).ready(function() {
         Injusticia2playing = true;
         Injusticia2();
         injusticia1.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playInjusticia3(){
     console.log('completado');
@@ -706,8 +731,10 @@ $(document).ready(function() {
         Injusticia3playing = true;
         Injusticia3();
         injusticia2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playInjusticia4(){
     console.log('completado');
@@ -716,8 +743,10 @@ $(document).ready(function() {
         Injusticia4playing = true;
         Injusticia4();
         injusticia3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playPuertas(){
     console.log('completado');
@@ -726,8 +755,10 @@ $(document).ready(function() {
         Puertasplaying = true;
         Puertas();
         injusticia4.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
 });

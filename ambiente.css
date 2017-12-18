@@ -53,6 +53,18 @@ opacity:1;
   cursor: pointer;
 }
 
+#manoClick{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width:5%;
+  right:0;
+  left:0;
+  bottom: 5%;
+  margin: auto;
+  visibility: hidden;
+}
+
 #gases1,#gases2,#gases3,#gases4{
   position: absolute;
   width:100%;

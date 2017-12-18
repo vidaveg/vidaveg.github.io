@@ -55,6 +55,18 @@ opacity:1;
   cursor: pointer;
 }
 
+#manoClick{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width:5%;
+  right:0;
+  left:0;
+  bottom: 5%;
+  margin: auto;
+  visibility: hidden;
+}
+
 #crueldad1, #crueldad2, #crueldad3, #crueldad4, #crueldad5, #crueldad6, #crueldad7{
   position: absolute;
   width:100%;

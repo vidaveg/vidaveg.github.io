@@ -22,8 +22,11 @@ $(document).ready(function() {
   var Extincion3playing = false;
   var Puertasplaying = false;
 
+
   Gases1();
   Titulo();
+
+
   function Titulo() {
     $("#pagFuentes").on("click", abrirLink);
     $("#pagFuentes").on("mouseover", quitarEstilo);
@@ -60,7 +63,16 @@ $(document).ready(function() {
     window.open("index.html", "_blank");
 
   }
+  //mouse
+  new TimelineMax({repeat:-1}).from($('#manoCirc'), 2,{scale:0, transformOrigin: "center center"})
+    .to($('#manoCirc'), 0.5,{opacity:0},'1.3');
+  function ManoClick(){
+    manoClick.style.visibility = "visible";
+    TweenMax.set($('#manoClick'), {scale:0});
+    TweenMax.to($('#manoClick'), 0.6,{scale:1, transformOrigin: "bottom center", ease: Back.easeOut, delay:3});
 
+  }
+// animaciones
   //Gases1();
   function Gases1(){
     gases1.style.visibility = "visible";
@@ -239,7 +251,7 @@ $(document).ready(function() {
     new TimelineMax().to($("#ao1oceano"),1,{yoyo:true,repeat:-1,x:-10,ease:Sine.easeInOut});
     TweenMax.set([$("#ao1margen")],{opacity:0});
   }
-  //Oceanos2();
+  // Oceanos2();
   function Oceanos2(){
     oceanos2.style.visibility = "visible";
     document.getElementById("titulo").innerHTML="Océanos";
@@ -803,8 +815,11 @@ $(document).ready(function() {
         Gases2playing = true;
         Gases2();
         gases1.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
+
   }
   function playGases3(){
     console.log('completado');
@@ -813,8 +828,10 @@ $(document).ready(function() {
         Gases3playing = true;
         Gases3();
         gases2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playGases4(){
     console.log('completado');
@@ -823,8 +840,10 @@ $(document).ready(function() {
         Gases4playing = true;
         Gases4();
         gases3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playOceanos1(){
     console.log('completado');
@@ -833,8 +852,10 @@ $(document).ready(function() {
         Oceanos1playing = true;
         Oceanos1();
         gases4.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playOceanos2(){
     console.log('completado');
@@ -843,8 +864,10 @@ $(document).ready(function() {
         Oceanos2playing = true;
         Oceanos2();
         oceanos1.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playOceanos3(){
     console.log('completado');
@@ -853,8 +876,10 @@ $(document).ready(function() {
         Oceanos3playing = true;
         Oceanos3();
         oceanos2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playOceanos4(){
     console.log('completado');
@@ -863,8 +888,10 @@ $(document).ready(function() {
         Oceanos4playing = true;
         Oceanos4();
         oceanos3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playOceanos5(){
     console.log('completado');
@@ -873,8 +900,10 @@ $(document).ready(function() {
         Oceanos5playing = true;
         Oceanos5();
         oceanos4.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playDeforestacion1(){
     console.log('completado');
@@ -883,8 +912,10 @@ $(document).ready(function() {
         Deforestacion1playing = true;
         Deforestacion1();
         oceanos5.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playDeforestacion2(){
     console.log('completado');
@@ -893,8 +924,10 @@ $(document).ready(function() {
         Deforestacion2playing = true;
         Deforestacion2();
         deforestacion1.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playDeforestacion3(){
     console.log('completado');
@@ -903,8 +936,10 @@ $(document).ready(function() {
         Deforestacion3playing = true;
         Deforestacion3();
         deforestacion2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playDeforestacion4(){
     console.log('completado');
@@ -913,8 +948,10 @@ $(document).ready(function() {
         Deforestacion4playing = true;
         Deforestacion4();
         deforestacion3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playRecursos1(){
     console.log('completado');
@@ -923,8 +960,10 @@ $(document).ready(function() {
         Recursos1playing = true;
         Recursos1();
         deforestacion4.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playRecursos2(){
     console.log('completado');
@@ -933,8 +972,10 @@ $(document).ready(function() {
         Recursos2playing = true;
         Recursos2();
         recursos1.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playRecursos3(){
     console.log('completado');
@@ -943,8 +984,10 @@ $(document).ready(function() {
         Recursos3playing = true;
         Recursos3();
         recursos2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playRecursos4(){
     console.log('completado');
@@ -953,8 +996,10 @@ $(document).ready(function() {
         Recursos4playing = true;
         Recursos4();
         recursos3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playExtincion1(){
     console.log('completado');
@@ -963,8 +1008,10 @@ $(document).ready(function() {
         Extincion1playing = true;
         Extincion1();
         recursos4.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playExtincion2(){
     console.log('completado');
@@ -973,8 +1020,10 @@ $(document).ready(function() {
         Extincion2playing = true;
         Extincion2();
         extincion1.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playExtincion3(){
     console.log('completado');
@@ -983,8 +1032,10 @@ $(document).ready(function() {
         Extincion3playing = true;
         Extincion3();
         extincion2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
   function playPuertas(){
     console.log('completado');
@@ -993,8 +1044,10 @@ $(document).ready(function() {
         Puertasplaying = true;
         Puertas();
         extincion3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
 });

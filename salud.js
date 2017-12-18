@@ -59,6 +59,15 @@ $(document).ready(function() {
     window.open("index.html", "_blank");
 
   }
+  //mouse
+  new TimelineMax({repeat:-1}).from($('#manoCirc'), 2,{scale:0, transformOrigin: "center center"})
+    .to($('#manoCirc'), 0.5,{opacity:0},'1.3');
+  function ManoClick(){
+    manoClick.style.visibility = "visible";
+    TweenMax.set($('#manoClick'), {scale:0});
+    TweenMax.to($('#manoClick'), 0.6,{scale:1, transformOrigin: "bottom center", ease: Back.easeOut, delay:3});
+
+  }
 
   //Animaciones
   function Puertas(){
@@ -667,8 +676,10 @@ $(document).ready(function() {
         Corazon2playing = true;
         Corazon2();
         arteriaLarga.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playCorazon3(){
@@ -679,8 +690,10 @@ $(document).ready(function() {
         Corazon3();
         corazon2_texto.style.visibility = "hidden";
         corazon2_cerebro.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playCancer1(){
@@ -690,9 +703,12 @@ $(document).ready(function() {
         Cancer1playing = true;
         Cancer1();
         corazon3_estadisticas.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
+
 
   function playCancer2(){
     console.log('completado');
@@ -701,8 +717,10 @@ $(document).ready(function() {
         Cancer2playing = true;
         Cancer2();
         cancer1.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playCancer3(){
@@ -712,8 +730,10 @@ $(document).ready(function() {
         Cancer3playing = true;
         Cancer3();
         cancer2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playCancer4(){
@@ -723,8 +743,10 @@ $(document).ready(function() {
         Cancer4playing = true;
         Cancer4();
         cancer3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playDiabetes1(){
@@ -734,8 +756,10 @@ $(document).ready(function() {
         Diabetes1playing = true;
         Diabetes1();
         cancer4.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playDiabetes2(){
@@ -746,8 +770,10 @@ $(document).ready(function() {
         Diabetes2();
         diabetes1_1.style.visibility = "hidden";
         diabetes1_2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playDiabetes3(){
@@ -758,8 +784,10 @@ $(document).ready(function() {
         Diabetes3();
         diabetes2_1.style.visibility = "hidden";
         diabetes2_2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playDiabetes4(){
@@ -769,8 +797,10 @@ $(document).ready(function() {
         Diabetes4playing = true;
         Diabetes4();
         diabetes3.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playOtros1(){
@@ -780,8 +810,10 @@ $(document).ready(function() {
         Otros1playing = true;
         Otros1();
         diabetes4.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playOtros2(){
@@ -791,9 +823,10 @@ $(document).ready(function() {
         Otros2playing = true;
         Otros2();
         otros1.style.visibility = "hidden";
-
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
   function playPuertas(){
@@ -803,8 +836,10 @@ $(document).ready(function() {
         Puertasplaying = true;
         Puertas();
         otros2.style.visibility = "hidden";
+        manoClick.style.visibility = "hidden";
       }
     });
+    ManoClick();
   }
 
 
