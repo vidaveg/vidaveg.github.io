@@ -3,6 +3,29 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
   overflow: hidden;
 }
+#ChromeMenu{
+  position: absolute;
+  height:auto;
+  width:100%;
+  top:0;
+  right:0;
+  left:0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+
+#BotonesMenuChrome{
+  position: absolute;
+  height:auto;
+  width:30%;
+  top:90%;
+  right:0;
+  left:0;
+  margin: auto;
+  visibility: hidden;
+}
+
 /* Estilos frase inicio */
 #inicio1frase{
   position: absolute;
