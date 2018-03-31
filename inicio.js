@@ -1,7 +1,17 @@
-// Deteccion de navegador
-var isChrome = !!window.chrome && !!window.chrome.webstore;
+// Deteccion de navegador y OS
+var md = new MobileDetect(window.navigator.userAgent);
+var isAndroid=md.os();
+isAndroid=(isAndroid==null)? false: true;
+
+
+var isChrome = !!window.chrome && !!window.chrome.webstore || !!isAndroid;
 var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
 var menuChromePlaying = false;
+
+// alert(navigator.userAgent.match(/Android/i));
+
+
+//AndroidOS
 console.log(isChrome);
 //cookiesSafari
 function getcookie(cookiename) {
@@ -47,6 +57,7 @@ if(count==1){
     menuChromePlaying = true;
   }
 } else {
+  // el siguiente numero count >= N , es el que define cuantos refresh toma para activar menu
     if (count >= 1) {
         setcookie("counter", 0, 1);
     }
@@ -59,13 +70,18 @@ function ChromePopUp(){
   TweenMax.set($("#inicio1frase"), {opacity:0.25});
   TweenMax.from($("#ChromeMenu"), 1.25, {y:500, ease: Power3.easeOut});
   TweenMax.from($("#ChromeMenu"), 0.5, {opacity:0, ease: Power3.easeOut, delay:0.5});
-  $("#ChromeContinuar").click(function() {
+  /*$("#ChromeContinuar").click(function() {
    window.open("index.html", "_self");
-   });
-  $("#ChromeIrADatos").click(function() {
+ });*/
+
+document.getElementById("ChromeContinuar").addEventListener("click",function(){
+  window.open("index.html", "_self");
+});
+
+document.getElementById("ChromeIrADatos").addEventListener("click",function(){
     window.open("datos.html", "_self");
     });
-  $("#ChromeIcon").click(function() {
+document.getElementById("ChromeIcon").addEventListener("click",function(){
      window.open("https://www.google.ca/intl/en/chrome/", "_self");
     });
   $("#ChromeIcon").hover(function(){
@@ -115,14 +131,14 @@ $(document).ready(function() {
 
   function InicioFrase(){
     inicio1frase.style.visibility = "visible";
-    TweenMax.set($("#if1sit"),{transformOrigin: "center bottom",opacity:0, scale:0.95,y:30});
+    TweenMax.set($("#if1sit"),{transformOrigin: "center bottom",opacity:0, scale:1,y:30});
     TweenMax.set([$("#if1amb"),$("#if1sal"),$("#if1anim")],{opacity:0,y:50});
     TweenMax.set($("#if1latomarias > path"),{scale:1.5,transformOrigin: "center top",opacity:0,y:30});
     TweenMax.set($("#if1mano"),{transformOrigin: "center center",scale:0,opacity:0});
 
-    new TimelineMax({delay:0.5}).to($("#if1sit"),1,{y:0,opacity:1,scale:1,ease:Back.easeOut})
+    new TimelineMax({delay:0.5}).to($("#if1sit"),1,{y:0,opacity:1,scale:1,ease:Back.easeOut,onComplete: startPuertas})
     .staggerTo([$("#if1amb"),$("#if1sal"),$("#if1anim")],1,{delay:0.4,y:0,opacity:1,ease: Back.easeOut},1.4)
-    .staggerTo($("#if1latomarias > path"),0.6,{delay:0.4,opacity:1,scale:1,y:0,ease:Back.easeOut,onComplete: startPuertas},0.1)
+    .staggerTo($("#if1latomarias > path"),0.6,{delay:0.4,opacity:1,scale:1,y:0,ease:Back.easeOut},0.1)
     .to($("#if1txt"),0.8,{delay:0.4,y:-140,ease:Back.easeInOut})
     .to($("#if1mano"),0.5,{opacity:1,scale:1,ease:Back.easeOut},"-=0.3")
     ;
@@ -132,7 +148,7 @@ $(document).ready(function() {
 
   function startPuertas(){
     console.log('completado');
-    $("body").click(function() {
+    document.body.addEventListener("click",function() {
       if(dibujarPuertasplaying==false && menuChromePlaying==false){
         dibujarPuertasplaying=true;
         dibujarPuertas();
@@ -176,7 +192,8 @@ $(document).ready(function() {
     p_etica.hover(over_eticaSafari, out_eticaSafari);
   }
   //Clicks Puertas
-    p_salud.click(function() {
+
+    document.getElementById("puertasalud").addEventListener("click",function(){
       if (activarsalud == true) {
         activaretica = false;
         activarmedio = false;
@@ -191,7 +208,7 @@ $(document).ready(function() {
         .add(frase1saludAnim, 2);
       }
     });
-    p_medio.click(function() {
+    document.getElementById("puertamedio").addEventListener("click",function(){
       if (activarmedio == true){
         activarsalud = false;
         activaretica = false;
@@ -206,7 +223,7 @@ $(document).ready(function() {
         ;
       }
     });
-    p_etica.click(function() {
+    document.getElementById("puertaetica").addEventListener("click",function(){
       if (activaretica == true) {
         activarsalud = false;
         activarmedio = false;
